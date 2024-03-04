@@ -1,0 +1,6 @@
+@CapacitacionArquitecturas_HostAddress = http://localhost:5053
+
+GET {{CapacitacionArquitecturas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
