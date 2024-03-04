@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapacitacionArquitecturas", "CapacitacionArquitecturas\CapacitacionArquitecturas.csproj", "{41594AC8-D6DD-4C10-9780-B5BA3E8AE555}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapacitacionArquitecturas", "CapacitacionArquitecturas\CapacitacionArquitecturas.csproj", "{41594AC8-D6DD-4C10-9780-B5BA3E8AE555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapacitacionArquitecturas.Domain", "CapacitacionArquitecturas.Domain\CapacitacionArquitecturas.Domain.csproj", "{BA031C31-FA73-4861-8D23-4D467C952CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapacitacionArquitecturas.Domain", "CapacitacionArquitecturas.Domain\CapacitacionArquitecturas.Domain.csproj", "{BA031C31-FA73-4861-8D23-4D467C952CEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapacitacionArquitecturas.Application", "CapacitacionArquitecturas.Application\CapacitacionArquitecturas.Application.csproj", "{FC0B1A89-1503-42DC-9BB9-D2DDCF53B3F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapacitacionArquitecturas.Application", "CapacitacionArquitecturas.Application\CapacitacionArquitecturas.Application.csproj", "{FC0B1A89-1503-42DC-9BB9-D2DDCF53B3F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapacitacionArquitecturas.Infrastructure", "CapacitacionArquitecturas.Infrastructure\CapacitacionArquitecturas.Infrastructure.csproj", "{31F41B85-BA86-48F0-89DF-84590DAFA7CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapacitacionArquitecturas.Infrastructure", "CapacitacionArquitecturas.Infrastructure\CapacitacionArquitecturas.Infrastructure.csproj", "{31F41B85-BA86-48F0-89DF-84590DAFA7CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BA031C31-FA73-4861-8D23-4D467C952CEB} = {BA031C31-FA73-4861-8D23-4D467C952CEB}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

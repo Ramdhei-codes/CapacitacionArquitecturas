@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapacitacionArquitecturas.Domain.Tasks
 {
-    public class Task
+    public class ToDoTask
     {
         public string? Id { get; set; }
         public string? Title { get; set; }
