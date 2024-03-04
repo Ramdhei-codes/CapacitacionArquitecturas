@@ -1,6 +1,6 @@
-﻿using CapacitacionArquitecturas.Infrastructure.DataAccess;
+﻿using CapacitacionArquitecturas.Domain.Database;
+using CapacitacionArquitecturas.Infrastructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace CapacitacionArquitecturas._DI
 {
@@ -12,6 +12,8 @@ namespace CapacitacionArquitecturas._DI
             {
                 options.UseSqlite(builder.Configuration.GetConnectionString("TaskDbConnection"), b => b.MigrationsAssembly("CapacitacionArquitecturas"));
             });
+
+            builder.Services.AddScoped<ITaskRepository, ToDoTaskRepository>();
         }
     }
 }
